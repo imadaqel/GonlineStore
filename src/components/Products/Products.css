@@ -1,0 +1,120 @@
+.products {
+  background-color: rgb(221, 217, 217);
+}
+.products-container {
+  max-width: 1000px;
+  margin: auto;
+  justify-content: center;
+  background-color: white;
+  min-height: 100vh;
+}
+.css-o69gx8-MuiCardMedia-root {
+  width: 68% !important;
+  margin: auto;
+  object-fit: contain !important;
+  min-width: 300px;
+}
+.css-r40f8v-MuiTypography-root {
+  text-align: center;
+}
+.products-content,
+.products-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+.bookItems {
+  margin: 0 60px;
+  margin-bottom: 0.25rem;
+}
+.productsCard-title {
+  margin: 0;
+}
+.productsCard {
+  min-width: 220px;
+  padding: 10px 0;
+  margin: 0;
+}
+.productsCard-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 80px;
+  padding-left: 10px;
+}
+.productsCard-description {
+  hyphens: auto;
+  font-size: x-small;
+  overflow: hidden;
+  /* white-space: nowrap; */
+  max-width: 100px;
+}
+.productsImg {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+}
+.products-header {
+  text-align: center;
+  padding-top: 15px;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 425px) {
+  .products-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+  }
+  .productsCard {
+    flex-direction: row;
+    margin: auto;
+    justify-content: center;
+  }
+  .productsImg {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+  .productsCard-description {
+    max-width: 300px;
+  }
+  .productsCard-title {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 0.25rem;
+  }
+}
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+  .productsCard {
+    margin: auto;
+    flex-direction: column;
+  }
+  .productsImg {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .productsCard-description {
+    max-width: 300px;
+    text-align: center;
+    margin: auto;
+  }
+  .productsCard-title {
+    margin: 0;
+    text-align: center;
+    font-size: medium;
+  }
+  .products-header {
+    margin-left: 3.7rem;
+    font-size: large;
+  }
+}
