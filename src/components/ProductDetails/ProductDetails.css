@@ -42,7 +42,7 @@
 .productCard-description {
   font-size: small;
 }
-.productImgContainer {
+.productImg-container {
   width: 300px;
   height: 300px;
 }
@@ -52,7 +52,7 @@
   height: 90%;
   padding: 0px;
 }
-.productDescContainer {
+.productDesc-container {
   width: 350px;
   height: 350px;
   margin-left: 70px;

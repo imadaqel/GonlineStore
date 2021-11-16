@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 
 function CartIcon(props) {
+  const { totalQuantity } = props;
+  console.log(totalQuantity);
   return (
     <Link to={`/cart`}>
       <div className="Icon">
         <i className="fa fa-shopping-cart"></i>
-        <span>{props.totalQuantity}</span>
+        <span>{totalQuantity}</span>
       </div>
     </Link>
   );
@@ -18,7 +20,7 @@ const mapStateToProps = (state) => {
     return {
       totalQuantity: state.cart.reduce(
         (totalQuantity, item) =>
-          parseInt(totalQuantity) + parseInt(item.quantity),
+          parseInt(totalQuantity) + parseInt(item.quantity || 0),
         0
       ),
     };

@@ -34,7 +34,8 @@ function Cart(props) {
                       <tr>
                         <td>{product.title}</td>
                         <td>{product.price}</td>
-                        <td className="text-right">{quantity} </td>
+                        <td>{quantity}</td>
+                        {/* <td className="text-right">{quantity} </td> */}
                         <td>
                           <button
                             onClick={() => removeFromCart(index)}
@@ -46,7 +47,7 @@ function Cart(props) {
                       </tr>
                     ))}
                     <tr>
-                      <td colspan="4" align="right">
+                      <td colSpan="4" align="right">
                         <h5 className="font-medium m-b-30">
                           Total Price : {total}
                         </h5>

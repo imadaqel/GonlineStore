@@ -24,16 +24,7 @@
   justify-content: center;
   margin-top: 30px;
 }
-.bookItems {
-  margin: 0 60px;
-  margin-bottom: 0.25rem;
-}
 .productsCard-title {
-  margin: 0;
-}
-.productsCard {
-  min-width: 220px;
-  padding: 10px 0;
   margin: 0;
 }
 .productsCard-container {
@@ -46,14 +37,7 @@
   hyphens: auto;
   font-size: x-small;
   overflow: hidden;
-  /* white-space: nowrap; */
   max-width: 100px;
-}
-.productsImg {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  padding: 0px;
 }
 .products-header {
   text-align: center;
@@ -69,16 +53,6 @@
     margin: auto;
     justify-content: center;
   }
-  .productsCard {
-    flex-direction: row;
-    margin: auto;
-    justify-content: center;
-  }
-  .productsImg {
-    width: 80px;
-    height: 80px;
-    margin: auto;
-  }
   .productsCard-description {
     max-width: 300px;
   }
@@ -89,20 +63,6 @@
   }
 }
 @media only screen and (max-width: 425px) and (min-width: 320px) {
-  .productsCard {
-    margin: auto;
-    flex-direction: column;
-  }
-  .productsImg {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
-    margin: auto;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-  }
   .productsCard-description {
     max-width: 300px;
     text-align: center;

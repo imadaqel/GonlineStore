@@ -1,5 +1,5 @@
 import "./Products.css";
-import React, { useState, useEffect, lazy, Suspense } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -50,7 +50,7 @@ export default function Products() {
     "men's clothing",
     "women's clothing",
   ];
-  const listItems = filteringByCat.map((item: string, index) => (
+  const listItems = filteringByCat.map((item: string) => (
     <button
       className="btn btn-secondary btn-sm"
       key={item}
@@ -59,6 +59,7 @@ export default function Products() {
       {item}
     </button>
   ));
+
   return (
     <>
       <section className="products">

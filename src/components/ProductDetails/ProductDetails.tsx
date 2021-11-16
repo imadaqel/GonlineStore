@@ -4,17 +4,16 @@ import { BrowserRouter, useParams } from "react-router-dom";
 import { addToCart } from "../../store/actions/actions";
 import { connect } from "react-redux";
 
+interface IProduct {
+  price: number;
+  description: string;
+  id: number;
+  image: string;
+  category: string;
+  title: string;
+}
 function ProductDetails(props: any) {
   const { id }: any = useParams();
-
-  interface IProduct {
-    price: number;
-    description: string;
-    id: number;
-    image: string;
-    category: string;
-    title: string;
-  }
   const [quantity, setQuantity] = useState(0);
   const [ProductDetails, setProductDetails] = useState<IProduct>({
     title: "",
@@ -74,8 +73,8 @@ function ProductDetails(props: any) {
                   </div>
                 </div>
                 <div>
-                  <div className="productDescContainer">
-                    <div className="productImgContainer">
+                  <div className="productDesc-container">
+                    <div className="productImg-container">
                       <img
                         className="productImg"
                         src={ProductDetails.image}
@@ -95,7 +94,7 @@ function ProductDetails(props: any) {
 
 const mapDispatchToProps = (dispatch: any) => {
   return {
-    addToCart: (productsInfo: any, quantity: any) =>
+    addToCart: (productsInfo: IProduct, quantity: any) =>
       dispatch(addToCart(productsInfo, quantity)),
   };
 };
